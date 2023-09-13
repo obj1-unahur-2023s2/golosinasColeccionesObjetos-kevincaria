@@ -1,6 +1,148 @@
+describe "Test de bombon"{
+	test "Se verifica peso inicial, precio, gusto y si contiene gluten" {
+		assert.that(bombom.contieneGluten())
+		assert.equals(1,bombon.peso())
+		assert.equals(1,bombon.precio())
+		assert.equals(1,bombon.gusto())
 
-test "testX" {
+	}
+	test "Se dan 2 mordiscos y se valida que"{
+		bombon.recibirMordisco()
+		bombon.recibirMordisco()
 
-	assert.that(true)
+	}
+}
 
+describe "Test de alfajor"{
+	test "Se verifica peso inicial, precio, gusto y si contiene gluten" {
+		assert.that(alfajor.contieneGluten())
+		assert.equals(1,alfajor.peso())
+		assert.equals(1,alfajor.precio())
+		assert.equals(1,alfajor.gusto())
+
+	}
+	test "Se dan 2 mordiscos y se valida que"{
+		alfajor.recibirMordisco()
+		alfajor.recibirMordisco()
+		
+	}
+}
+
+describe "Test de caramelo"{
+	test "Se verifica peso inicial, precio, gusto y si contiene gluten" {
+		assert.that(caramelo.contieneGluten())
+		assert.equals(1,caramelo.peso())
+		assert.equals(1,caramelo.precio())
+		assert.equals(1,caramelo.gusto())
+
+	}
+	test "Se dan 2 mordiscos y se valida que"{
+		caramelo.recibirMordisco()
+		caramelo.recibirMordisco()
+		
+	}
+}
+
+describe "Test de chupetin"{
+	test "Se verifica peso inicial, precio, gusto y si contiene gluten" {
+		assert.that(chupetin.contieneGluten())
+		assert.equals(1,chupetin.peso())
+		assert.equals(1,chupetin.precio())
+		assert.equals(1,chupetin.gusto())
+
+	}
+	test "Se dan 2 mordiscos y se valida que"{
+		chupetin.recibirMordisco()
+		chupetin.recibirMordisco()
+		
+	}
+}
+
+describe "Test de oblea"{
+	test "Se verifica peso inicial, precio, gusto y si contiene gluten" {
+		assert.that(oblea.contieneGluten())
+		assert.equals(1,oblea.peso())
+		assert.equals(1,oblea.precio())
+		assert.equals(1,oblea.gusto())
+
+	}
+	test "Se dan 2 mordiscos y se valida que"{
+		oblea.recibirMordisco()
+		oblea.recibirMordisco()
+	}
+}
+
+describe "Test de chocolatin"{
+	test "Se verifica peso inicial, precio, gusto y si contiene gluten" {
+		assert.that(chocolatin.contieneGluten())
+		assert.equals(1,chocolatin.peso())
+		assert.equals(1,chocolatin.precio())
+		assert.equals(1,chocolatin.gusto())
+
+	}
+	test "Se dan 2 mordiscos y se valida que"{
+		chocolatin.recibirMordisco()
+		chocolatin.recibirMordisco()
+		
+	}
+}
+
+describe "Test de tuttifrutti"{
+	test "Se verifica peso inicial, precio, gusto y si contiene gluten" {
+		assert.that(tuttifrutti.contieneGluten())
+		assert.equals(1,tuttifrutti.peso())
+		assert.equals(1,tuttifrutti.precio())
+		assert.equals(1,tuttifrutti.gusto())
+
+	}
+	test "Se dan 2 mordiscos y se valida que"{
+		tuttifrutti.recibirMordisco()
+		tuttifrutti.recibirMordisco()
+		
+	}
+}
+
+describe "Test de tuttifrutti bañado"{
+	test "Se verifica peso inicial, precio, gusto y si contiene gluten" {
+		assert.that(golosinaBaniada.contieneGluten())
+		assert.equals(1,golosinaBaniada.peso())
+		assert.equals(1,golosinaBaniada.precio())
+		assert.equals(1,golosinaBaniada.gusto())
+
+	}
+	test "Se dan 2 mordiscos y se valida que"{
+		golosinaBaniada.recibirMordisco()
+		golosinaBaniada.recibirMordisco()
+		
+	}
+}
+
+describe "Test de chocolatin bañado"{
+	test "Se verifica peso inicial, precio, gusto y si contiene gluten" {
+		assert.that(golosinaBaniada.contieneGluten())
+		assert.equals(1,golosinaBaniada.peso())
+		assert.equals(1,golosinaBaniada.precio())
+		assert.equals(1,golosinaBaniada.gusto())
+
+	}
+	test "Se dan 2 mordiscos y se valida que"{
+		golosinaBaniada.recibirMordisco()
+		golosinaBaniada.recibirMordisco()
+		
+	}
+}
+
+describe "Test de chupetin bañado"{
+	test "Se verifica peso inicial, precio, gusto y si contiene gluten" {
+		assert.that(golosinaBaniada.contieneGluten())
+		assert.equals(1,golosinaBaniada.peso())
+		assert.equals(1,golosinaBaniada.precio())
+		assert.equals(1,golosinaBaniada.gusto())
+
+	}
+	test "Se dan 2 mordiscos y se valida que"{
+		golosinaBaniada.recibirMordisco()
+		golosinaBaniada.recibirMordisco()
+		
+	}
 }

@@ -79,51 +79,58 @@ object oblea {
 }
 
 object chocolatin {
-	var property peso
+	var pesoInicial
+	var peso
 
-	method precio() = peso*0.5
-
-	method sabor(){
-
+	method peso(pesoInicial){
+		pesoInicial = pesoInicial
+		peso = pesoInicial
 	}
 
+	method peso() = peso
+
+	method precio() = pesoInicial*0.5
+
+	method sabor() = "chocolate"
+	
 	method contieneGluten() = true
+
+	method recibirMordiso(){
+		peso = 0.max(peso-2)
+	}
 }
 
-object golosinaBañada {
+object golosinaBaniada {
+	var property golosinaBase
+	var pesoBanio = 4
 
-	method precio(){
+	method precio() = golosinaBase.precio() + 2
 
+	method sabor() = golosinaBase.sabor()
+
+	method peso() = golosinaBase.peso() + pesoBanio
+
+	method contieneGluten() = golosinaBase.contieneGluten()
+
+	method recibirMordiso(){
+		golosinaBase.recibirMordiso()
+		pesoBanio = 0.max(pesoBanio - 2)
 	}
-
-	method sabor(){
-
-	}
-
-	method peso(){
-
-	}
-
-	method contieneGluten(){
-
-	}
+	
 }
 
 object tuttiFrutti {
+	var property contieneGluten 
+	var cantidadMordidas = 0
+	const sabores = [frutilla, chocolate, naranja]
 
-	method precio(){
+	method precio() = if(contieneGluten){10}else{7}
 
-	}
+	method sabor() = sabores.get((cantidadMordidas) % 3)
+	
+	method peso() = 5
 
-	method sabor(){
-
-	}
-
-	method peso(){
-
-	}
-
-	method contieneGluten(){
-
+	method recibirMordisco() {
+		cantidadMordidas ++
 	}
 }
